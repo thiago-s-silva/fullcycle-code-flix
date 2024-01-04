@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Header from './components/Header';
+import { FaPlay } from 'react-icons/fa';
+import { MdInfo } from 'react-icons/md';
 
 export default function Home() {
   return (
@@ -34,15 +36,15 @@ export default function Home() {
 
           <div className='flex space-x-2 md:space-x-4 lg:space-x-4'>
             <button className='rounded-md bg-red-600 px-2 py-1 text-white md:rounded-full md:px-4 md:py-6 lg:rounded-full lg:px-6 lg:py-2'>
-              <div className='flex items-center'>
-                <i className='bx bx-play text-[20px] md:text-2xl lg:text-2xl'></i>
+              <div className='flex items-center gap-2'>
+                <FaPlay />
                 Play
               </div>
             </button>
 
             <button className='rounded-md bg-gray-700 px-2 py-1 text-white md:rounded-full md:px-4 lg:rounded-full lg:px-4'>
-              <div className='flex items-center gap-1'>
-                <i className='bx bxs-info-circle'></i>
+              <div className='flex items-center gap-2'>
+                <MdInfo />
                 More info
               </div>
             </button>
