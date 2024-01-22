@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Header from './components/Header';
-import { FaPlay } from 'react-icons/fa';
-import { MdInfo } from 'react-icons/md';
 
 export default function Home() {
   return (
@@ -37,14 +35,33 @@ export default function Home() {
           <div className='flex space-x-2 md:space-x-4 lg:space-x-4'>
             <button className='rounded-md bg-red-600 px-2 py-1 text-white md:rounded-full md:px-4 md:py-6 lg:rounded-full lg:px-6 lg:py-2'>
               <div className='flex items-center gap-2'>
-                <FaPlay />
+                <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' className='h-6 w-6'>
+                  <path
+                    fillRule='evenodd'
+                    d='M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z'
+                    clipRule='evenodd'
+                  />
+                </svg>
                 Play
               </div>
             </button>
 
             <button className='rounded-md bg-gray-700 px-2 py-1 text-white md:rounded-full md:px-4 lg:rounded-full lg:px-4'>
               <div className='flex items-center gap-2'>
-                <MdInfo />
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  strokeWidth={1.5}
+                  stroke='currentColor'
+                  className='h-6 w-6'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    d='m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z'
+                  />
+                </svg>
                 More info
               </div>
             </button>
